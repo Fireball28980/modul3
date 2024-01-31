@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .red {
+      color: red;
+    }
+  </style>
+  <script>
+    const min = -100;
+    const max = 1000;
+    var count = 0;
+
+    function auszahlen() {
+      if (count > min) {
+        count -= 100;
+        countAnzeigen();
+      } else {
+        alert("Du kannst nicht mehr als -100€ auszahlen");
+      }
+    }
+    function einzahlen() {
+      if (count < max) {
+        count += 100;
+        countAnzeigen();
+      } else {
+        alert("Du kannst nicht mehr als 1000€ einzahlen");
+      }
+    }
+    function countAnzeigen() {
+      console.log(count);
+      var element = document.getElementById("konto");
+      element.innerHTML = count;
+      if (count < 0) {
+        element.classList.add("red");
+      } else {
+        element.classList.remove("red");
+      }
+    }
+  </script>
+  <body>
+    <button onclick="auszahlen()">100€ Auszahlen</button>
+    <span>Kontostand: </span><span id="konto">0</span><span>€</span>
+    <button onclick="einzahlen()">100€ Einzahlen</button>
+  </body>
+</html>

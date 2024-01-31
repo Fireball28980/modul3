@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taschenrechner</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.js" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="numblock">
+        <div id="zwischensumme"></div>
+        <div id="eingabe"></div>
+        <div class="grid-container">
+          <button onclick="press(7)" class="grid-item">7</button>
+          <button onclick="press(8)" class="grid-item">8</button>
+          <button onclick="press(9)" class="grid-item">9</button>
+          <button onclick="divide()" class="grid-item">/</button>
+          <button onclick="press(4)" class="grid-item">4</button>
+          <button onclick="press(5)" class="grid-item">5</button>
+          <button onclick="press(6)" class="grid-item">6</button>
+          <button onclick="multiply()" class="grid-item">*</button>
+          <button onclick="press(1)" class="grid-item">1</button>
+          <button onclick="press(2)" class="grid-item">2</button>
+          <button onclick="press(3)" class="grid-item">3</button>
+          <button onclick="sutract()" class="grid-item">-</button>
+          <button onclick="reset()" class="grid-item">CE</button>
+          <button onclick="press(0)" class="grid-item">0</button>
+          <button onclick="enter()" class="grid-item">=</button>
+          <button onclick="add()" class="grid-item">+</button>
+        </div>
+      </div>
+      <div id="verlauf"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

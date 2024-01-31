@@ -1,0 +1,46 @@
+body {
+  font-family: roboto;
+  overflow: hidden;
+}
+
+#zwischensumme {
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+#eingabe {
+  font-size: 2.5rem;
+  text-align: right;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 0.1rem;
+}
+
+.grid-item {
+  font-size: 2rem;
+  height: 5rem;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+}
+
+#liste {
+  width: 15rem;
+  font-size: 2rem;
+  padding: 1rem;
+  border-left: solid #ddd 1px;
+  height: 100vh;
+  text-align: right;
+  overflow-y: auto;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.numblock {
+  flex: 1;
+  padding-right: 1rem;
+}
